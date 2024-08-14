@@ -1,4 +1,4 @@
-# Creat a manifest that fix all termintion of phpp.
+# This Puppet manifest fixes all occurrences of "phpp" to "php" in the wp-settings.php file.
 
 exec { 'fix_phpp':
   command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
